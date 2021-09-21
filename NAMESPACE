@@ -2,7 +2,6 @@
 
 export(Factorial_func)
 export(Factorial_loop)
-export(Factorial_mem)
 export(Factorial_reduce)
 export(benchmark)
 import(microbenchmark)
