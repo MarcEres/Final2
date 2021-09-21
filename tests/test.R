@@ -1,6 +1,7 @@
 library(purrr)
 library(microbenchmark)
 library(testthat)
+library(Final)
 
 test_that("Testing the Factorial_loop function", {
        expect_equal(Factorial_loop(5), 120)})
