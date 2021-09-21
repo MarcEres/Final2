@@ -5,7 +5,7 @@ date: "21/9/2021"
 output: html_document
 ---
 
-
+[![Build Status](https://app.travis-ci.com/MarcEres/Final2.svg?branch=main)](https://app.travis-ci.com/MarcEres/Final2)
 
 #Objective
 

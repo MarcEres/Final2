@@ -16,39 +16,43 @@ knitr::opts_chunk$set(
 # Final
 
 <!-- badges: start -->
+[![Build Status](https://app.travis-ci.com/MarcEres/Final2.svg?branch=main)](https://app.travis-ci.com/MarcEres/Final2)
 <!-- badges: end -->
 
-The goal of Final is to ...
+#Objective
 
-use## Installation
+The purpose of this assessment is for you to combine your skills of creating, writing, documenting, and testing an R package with releasing that package on GitHub. In this assessment you'll be taking the R files from Week 2's assessment about documentation and putting that file in an R package.
 
-You can install the released version of Final from [CRAN](https://CRAN.R-project.org) with:
+For this assessment you must
 
-``` r
-install.packages("Final")
-```
+1.write a vignette to include in your package using knitr and R Markdown
+2.write at least one test written using testthat
+3.put your package on GitHub
+4.set up the repository so that the package can be checked and built on Travis
+5.Once your package has built on Travis and the build is passing with no errors, warnings, or notes you should
+6. add your Travis badge to the README.md file of your package repository.
 
-## Example
 
-This is a basic example which shows you how to solve a common problem:
+# Benchmark
 
-```{r example}
-library(Final)
-## basic example code
-```
+This packages aims to produce a benchmark between different
+implementations of the Factorial.
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## The `Factorial_loop` function
+Computes the Factorial using a For loop.
 
-```{r cars}
-summary(cars)
-```
+## The `Factorial_reduce` function
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
+Computes the Factorial using the reduce function.
 
-You can also embed plots, for example:
+## The `Factorial_func` function
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
+Computes the Factorial using recursion.
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+## The `benchmark` function
+Produce table with the time it took to compute the factorial
+
+# Dependencies
+
+* purrr
+* microbenchmark
