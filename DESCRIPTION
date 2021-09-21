@@ -8,7 +8,7 @@ Authors@R:
          email = "marcuseres@gmail.com",
          comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Compares different functions and the time it takes to produce a fact.
-License: CC0
+License:  GPL (>= 2)
     license
 Encoding: UTF-8
 LazyData: true
