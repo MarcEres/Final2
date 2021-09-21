@@ -88,33 +88,6 @@ Factorial_func <- function(x){
 }
 
 
-#' Factorial Memoization
-#'
-#' This is a simple function that calculates the Factorial using memoization
-#'
-#' @param x Numeric or integer to calculate the factorial from
-#'
-#' @return Returns the factorial
-#'
-#'
-#' @details In order for this function to work you have to create a table previously
-#' fac_tbl <- c(rep(NA,x))
-#'
-#' @examples
-#' Factorial_mem(5)
-#'
-#' @export
-Factorial_mem <- function(x){
-  ## Make sure that the x is a number
-  x <- as.numeric(x)
-  ## 0! = 1
-  if (x == 0){
-    1
-  }else{
-    fac_tbl[x] <<- x * Factorial_func(x-1)
-  }
-  fac_tbl[x]
-}
 
 #' Benchmark
 #'
@@ -138,6 +111,5 @@ benchmark <- function (x) {
 
                 result <- Factorial_func(x),
 
-                result <- Factorial_mem(x)
         )
 }

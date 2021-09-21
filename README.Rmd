@@ -48,9 +48,6 @@ Computes the Factorial using the reduce function.
 
 Computes the Factorial using recursion.
 
-## The `Factorial_mem` function
-
-Computes the Factorial using memoization.
 
 ## The `benchmark` function
 Produce table with the time it took to compute the factorial
