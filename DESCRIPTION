@@ -1,0 +1,24 @@
+Package: Final
+Title: Factorial Benchmarking
+Version: 0.0.0.9000
+Authors@R:
+  person(given = "Marc",
+         family = "Eres",
+         role = c("aut", "cre"),
+         email = "marcuseres@gmail.com",
+         comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Compares different functions and the time it takes to produce a fact.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+LazyData: true
+Imports:
+    purrr,
+    microbenchmark,
+    testthat
+Suggests:
+    knitr,
+    rmarkdown,
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+VignetteBuilder: knitr
